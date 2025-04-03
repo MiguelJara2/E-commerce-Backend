@@ -38,4 +38,12 @@ module.exports = function(app){
     app.delete('/api/deletecategory',[authJwt.verifyToken, authJwt.isAdmin],functions.deleteCategory);
 
     app.post('/api/payment',authJwt.verifyToken,functions.paymentStripe);
+
+    app.post('/api/createcoupon',[authJwt.verifyToken, authJwt.isAdmin],functions.createCoupon);
+
+    app.delete('/api/deletecoupon',[authJwt.verifyToken, authJwt.isAdmin],functions.deleteCoupon);
+
+    app.get('/api/getCoupons',[authJwt.verifyToken, authJwt.isAdmin],functions.getCoupons);
+
+    app.put('/api/updatepercentage',[authJwt.verifyToken, authJwt.isAdmin],functions.updatePercentage);
 }

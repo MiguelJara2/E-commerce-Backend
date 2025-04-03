@@ -26,6 +26,7 @@ require('./routes/user.routes')(app);
 const db = require('./models');
 const Role = db.role;
 const Clothes = db.clothes;
+const Coupons= db.coupon;
 db.mongoose.set('strictQuery', false);
 db.mongoose.connect(process.env.MONGOURI, {}).then(() => {
     console.log("Base de datos conectada");
@@ -522,6 +523,37 @@ function init() {
                 }
             });
 
+        }
+    })
+    Coupons.estimatedDocumentCount((err, count) => {
+        if (!err & count === 0) {
+            new Coupons({
+                code: "DESCUENTO10",
+                percentage: 10,
+                expirationDate: new Date("2025-05-01")
+            }).save((err) => {
+                if (err) {
+                    console.log("Error al crear el cupón")
+                }
+            });
+            new Coupons({
+                code: "OFERTA20",
+                percentage: 20,
+                expirationDate: new Date("2025-04-09")
+            }).save((err) => {
+                if (err) {
+                    console.log("Error al crear el cupón")
+                }
+            });
+            new Coupons({
+                code: "PROMOCION30",
+                percentage: 30,
+                expirationDate: new Date("2025-04-01")
+            }).save((err) => {
+                if (err) {
+                    console.log("Error al crear el cupón")
+                }
+            });
         }
     })
 

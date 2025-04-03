@@ -18,7 +18,7 @@ module.exports = function(app){
     
     app.get('/api/test/admin', [authJwt.verifyToken, authJwt.isAdmin],controller.adminBoard)
 
-    app.get('/api/clothes', [authJwt.verifyToken], controller.clothesBoard)
+    app.get('/api/clothes', controller.clothesBoard)
 
     app.get('/api/cart', [authJwt.verifyToken], authcontroller.getCart)
 }
