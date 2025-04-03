@@ -28,4 +28,14 @@ module.exports = function(app){
     app.delete('/api/deleteclothe',[authJwt.verifyToken, authJwt.isAdmin],userController.deleteClothe);
 
     app.post('/api/addclothes',[authJwt.verifyToken, authJwt.isAdmin],userController.addClothes);
+
+    app.put('/api/updateprice',[authJwt.verifyToken, authJwt.isAdmin],functions.updatePrice);
+
+    app.delete('/api/deleteclothescart',[authJwt.verifyToken],functions.deleteClothesInCart);
+
+    app.get('/api/getClothesByLetter',authJwt.verifyToken,functions.filterByLetter);
+
+    app.delete('/api/deletecategory',[authJwt.verifyToken, authJwt.isAdmin],functions.deleteCategory);
+
+    app.post('/api/payment',authJwt.verifyToken,functions.paymentStripe);
 }
