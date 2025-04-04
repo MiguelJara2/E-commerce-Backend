@@ -228,6 +228,10 @@ exports.paymentStripe = async (req, res) => {
             currency: 'usd',
             payment_method_types: [paymentMethod],
         });
+        // Confirmar el pago
+        const confirmedPaymentIntent = await stripe.paymentIntents.confirm(paymentIntent.id, {
+            payment_method: 'pm_card_visa', // Método de pago de prueba
+        });
         // Guardar el pago en la base de datos
         const payment = new Payments({
             userId: userId,
