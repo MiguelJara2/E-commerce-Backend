@@ -1,0 +1,727 @@
+{
+	"info": {
+		"_postman_id": "6a4aba69-b1df-4589-b26f-1b4d80ecea92",
+		"name": "E-commerce-clothes",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "41179105"
+	},
+	"item": [
+		{
+			"name": "signup rpineda",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"username\":\"rpineda\",\n    \"email\":\"rpineda@x-codec.net\",\n    \"password\":\"123456\",\n    \"roles\":[\"admin\", \"moderator\"]\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:4569/api/auth/signup",
+					"host": [
+						"localhost"
+					],
+					"port": "4569",
+					"path": [
+						"api",
+						"auth",
+						"signup"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "signup miguel",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"username\":\"miguel\",\n    \"email\":\"migueljaraespinoza97@gmail.com\",\n    \"password\":\"123456\",\n    \"roles\":[\"admin\", \"moderator\"]\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:4569/api/auth/signup",
+					"host": [
+						"localhost"
+					],
+					"port": "4569",
+					"path": [
+						"api",
+						"auth",
+						"signup"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "signin delopez",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"username\":\"delopez\",\n   \n    \"password\":\"123456\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:4569/api/auth/signin",
+					"host": [
+						"localhost"
+					],
+					"port": "4569",
+					"path": [
+						"api",
+						"auth",
+						"signin"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "signin miguel",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"username\":\"miguel\",\n   \n    \"password\":\"123456\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:4569/api/auth/signin",
+					"host": [
+						"localhost"
+					],
+					"port": "4569",
+					"path": [
+						"api",
+						"auth",
+						"signin"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "signout",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "localhost:4569/api/auth/signout",
+					"host": [
+						"localhost"
+					],
+					"port": "4569",
+					"path": [
+						"api",
+						"auth",
+						"signout"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "TestAll",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:4569/api/test/all",
+					"host": [
+						"localhost"
+					],
+					"port": "4569",
+					"path": [
+						"api",
+						"test",
+						"all"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "TestUser",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:4569/api/test/user",
+					"host": [
+						"localhost"
+					],
+					"port": "4569",
+					"path": [
+						"api",
+						"test",
+						"user"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "TestModerator",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:4569/api/test/moderator",
+					"host": [
+						"localhost"
+					],
+					"port": "4569",
+					"path": [
+						"api",
+						"test",
+						"moderator"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "signup delopez",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\":\"delopez\",\r\n    \"email\":\"delopez@x-codec.net\",\r\n    \"password\":\"123456\",\r\n    \"roles\":[\"user\"]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:4569/api/auth/signup",
+					"host": [
+						"localhost"
+					],
+					"port": "4569",
+					"path": [
+						"api",
+						"auth",
+						"signup"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "signin rpineda",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\":\"rpineda\",\r\n   \r\n    \"password\":\"123456\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:4569/api/auth/signin",
+					"host": [
+						"localhost"
+					],
+					"port": "4569",
+					"path": [
+						"api",
+						"auth",
+						"signin"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ListaRopa",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:4569/api/clothes",
+					"host": [
+						"localhost"
+					],
+					"port": "4569",
+					"path": [
+						"api",
+						"clothes"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "addCart",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"identity\":13,\r\n    \"quantity\":5\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:4569/api/addCart",
+					"host": [
+						"localhost"
+					],
+					"port": "4569",
+					"path": [
+						"api",
+						"addCart"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "updateStock",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"identity\":1,\r\n    \"quantity\":100\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:4569/api/updatestock",
+					"host": [
+						"localhost"
+					],
+					"port": "4569",
+					"path": [
+						"api",
+						"updatestock"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetCart",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:4569/api/cart",
+					"host": [
+						"localhost"
+					],
+					"port": "4569",
+					"path": [
+						"api",
+						"cart"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DeleteClothes",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"identity\":2\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:4569/api/deleteclothe",
+					"host": [
+						"localhost"
+					],
+					"port": "4569",
+					"path": [
+						"api",
+						"deleteclothe"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "AddClothes",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"Sandalias\",\r\n    \"description\":\"Sandalias de playa\",\r\n    \"price\": 25,\r\n    \"category\":\"sandalias\",\r\n    \"stock\":30,\r\n    \"identity\":2\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:4569/api/addclothes",
+					"host": [
+						"localhost"
+					],
+					"port": "4569",
+					"path": [
+						"api",
+						"addclothes"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "updatePrice",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"identity\":5,\r\n    \"price\":57\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:4569/api/updateprice",
+					"host": [
+						"localhost"
+					],
+					"port": "4569",
+					"path": [
+						"api",
+						"updateprice"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DeleteClothesInCart",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"identity\":1\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:4569/api/deleteclothescart",
+					"host": [
+						"localhost"
+					],
+					"port": "4569",
+					"path": [
+						"api",
+						"deleteclothescart"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "FilterByLetter",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"letter\":\"b\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:4569/api/getClothesByLetter",
+					"host": [
+						"localhost"
+					],
+					"port": "4569",
+					"path": [
+						"api",
+						"getClothesByLetter"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete category",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"category\":\"ropa urbana\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:4569/api/deletecategory",
+					"host": [
+						"localhost"
+					],
+					"port": "4569",
+					"path": [
+						"api",
+						"deletecategory"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PaymentStripe Coupon",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"paymentMethod\":\"card\",\r\n    \"coupon\":\"OFERTA20\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:4569/api/payment",
+					"host": [
+						"localhost"
+					],
+					"port": "4569",
+					"path": [
+						"api",
+						"payment"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PaymentStripe",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"paymentMethod\":\"card\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:4569/api/payment",
+					"host": [
+						"localhost"
+					],
+					"port": "4569",
+					"path": [
+						"api",
+						"payment"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CreateCoupon",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"code\":\"DEAL50\",\r\n    \"percentage\":50,\r\n    \"expirationDate\":\"2025-06-01T00:00:00.000+00:00\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:4569/api/createcoupon",
+					"host": [
+						"localhost"
+					],
+					"port": "4569",
+					"path": [
+						"api",
+						"createcoupon"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DeleteCoupon",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"code\":\"DEAL50\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:4569/api/deletecoupon",
+					"host": [
+						"localhost"
+					],
+					"port": "4569",
+					"path": [
+						"api",
+						"deletecoupon"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetCoupons",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:4569/api/getCoupons",
+					"host": [
+						"localhost"
+					],
+					"port": "4569",
+					"path": [
+						"api",
+						"getCoupons"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "updatePercentage",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"code\": \"PROMOCION30\",\r\n    \"percentage\":40\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:4569/api/updatepercentage",
+					"host": [
+						"localhost"
+					],
+					"port": "4569",
+					"path": [
+						"api",
+						"updatepercentage"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
